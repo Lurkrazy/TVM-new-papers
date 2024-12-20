@@ -7,11 +7,10 @@ Memory-Bound && Compute-Intensive Operators, like Self-attention operators, cont
 
 
 ## Features
-1. New search space(much smaller).
-2. Codegen optimization(reduce redundant memory access)
-3. Pruning.(same as 1.)
-4. Analytical model.
-5. Fusion.
+1. New search space(much smaller), Pruning.
+2. Codegen optimization(reduce redundant memory access) (How to use Triton as the backend? Need to read the [source code](https://github.com/Lurkrazy/TVM-new-papers/edit/main/MUFuser.md#in-srcrelaybackendcontribmcfuser).)
+3. Analytical model. (SM estimator, performance estimator)(no regression model?)
+4. Fusion.
 
 ## Evaluation
 
