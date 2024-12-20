@@ -8,7 +8,7 @@ Memory-Bound && Compute-Intensive Operators, like Self-attention operators, cont
 
 ## Features
 1. New search space(much smaller), Pruning.
-2. Codegen optimization(reduce redundant memory access) (How to use Triton as the backend? Need to read the [source code](https://github.com/Lurkrazy/TVM-new-papers/edit/main/MUFuser.md#in-srcrelaybackendcontribmcfuser).)
+2. Codegen optimization(reduce redundant memory access) (How to use Triton as the backend? Need to read the [source code](https://github.com/Lurkrazy/TVM-new-papers/blob/main/MUFuser.md#code-changes-in-tvm).)
 3. Analytical model. (SM estimator, performance estimator) (Just sort? No regression model?)
 4. Better fusion strategy for Matmul, which hasn't been supported well in Ansor. (Because of the fused kernel search space limits?)
 
