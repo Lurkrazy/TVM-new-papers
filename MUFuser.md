@@ -10,7 +10,7 @@ Memory-Bound && Compute-Intensive Operators, like Self-attention operators, cont
 1. New search space(much smaller), Pruning.
 2. Codegen optimization(reduce redundant memory access) (How to use Triton as the backend? Need to read the [source code](https://github.com/Lurkrazy/TVM-new-papers/edit/main/MUFuser.md#in-srcrelaybackendcontribmcfuser).)
 3. Analytical model. (SM estimator, performance estimator) (Just sort? No regression model?)
-4. Fusion.
+4. Better fusion strategy for Matmul, which hasn't been supported well in Ansor. (Because of the fused kernel search space limits?)
 
 ## Evaluation
 
@@ -18,7 +18,7 @@ Memory-Bound && Compute-Intensive Operators, like Self-attention operators, cont
 
 A100 and RTX3080
 
-1. GEMM and self-attention Operators: better than Pytorch(Triton backend?), [FlashAttention commit: 57ee618](https://github.com/Dao-AILab/flash-attention) and Ansor.
+1. Fused GEMM operator chains and self-attention Operators: better than Bolt, Pytorch(Triton backend?), [FlashAttention commit: 57ee618](https://github.com/Dao-AILab/flash-attention) and Ansor.
 
 2. End-to-End models(Bert-Small, Bert-Base, and Bert-Large):  + Ansor achieved about a 1.3× speedup over Ansor. MCFuser+Relay achieved about a 1.5x speedup over Relay alone.
 
