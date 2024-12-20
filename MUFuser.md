@@ -35,3 +35,8 @@ A100 and RTX3080
 1. Model efficiency: correlation and figures.
 
 2. Shared Memory Estimation: figures.
+
+
+## Notes
+
+Add Triton as a baseline: "Finally, the PTX code produced by Triton is converted into the TVM runtime library using the ```runtime.module.loadfile_ptx``` interface and encapsulated within an ```OperatorModule``` for evaluation."
