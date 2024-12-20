@@ -39,4 +39,8 @@ A100 and RTX3080
 
 ## Notes
 
-Add Triton as a baseline: "Finally, the PTX code produced by Triton is converted into the TVM runtime library using the ```runtime.module.loadfile_ptx``` interface and encapsulated within an ```OperatorModule``` for evaluation."
+* Good for Matmul and self-attention, not yet work for convolution.
+
+* Add Triton as a baseline: "Finally, the PTX code produced by Triton is converted into the TVM runtime library using the ```runtime.module.loadfile_ptx``` interface and encapsulated within an ```OperatorModule``` for evaluation."
+
+
